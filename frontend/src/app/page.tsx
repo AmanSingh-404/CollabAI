@@ -12,6 +12,23 @@ export default function ComponentName() {
     <div>
       <Navbar/>
       <Hero/>
+      {/* MARQUEE */}
+      <div className="marquee-section">
+        <div className="marquee-track">
+          <div className="marquee-item"><span>✦</span> CRDT Conflict-Free Sync</div>
+          <div className="marquee-item"><span>✦</span> Real-Time Collaboration</div>
+          <div className="marquee-item"><span>✦</span> AI Contextual Actions</div>
+          <div className="marquee-item"><span>✦</span> Workspace-Wide Citations</div>
+          <div className="marquee-item"><span>✦</span> Inline Comments & Mentions</div>
+          <div className="marquee-item"><span>✦</span> Summarize · Rewrite · Query</div>
+          <div className="marquee-item"><span>✦</span> CRDT Conflict-Free Sync</div>
+          <div className="marquee-item"><span>✦</span> Real-Time Collaboration</div>
+          <div className="marquee-item"><span>✦</span> AI Contextual Actions</div>
+          <div className="marquee-item"><span>✦</span> Workspace-Wide Citations</div>
+          <div className="marquee-item"><span>✦</span> Inline Comments & Mentions</div>
+          <div className="marquee-item"><span>✦</span> Summarize · Rewrite · Query</div>
+        </div>
+      </div>
       <Features/>
       <CRDTSection/>
       <AISection/>
