@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+
+export const metadata: Metadata = {
+  title: "CollabAI Docs — Real-time collaborative workspace with AI",
+  description:
+    "CRDT-powered real-time collaboration meets contextual AI. Write together, think smarter. Free for teams.",
+};
 
 export default function RootLayout({
   children,
@@ -7,9 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
+    <html lang="en" className="scroll-smooth">
+      <body className="antialiased">
         {children}
       </body>
     </html>
