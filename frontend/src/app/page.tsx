@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import CTASection from "./components/CTASection";
+import Footer from "./components/footer";
 
 export default function ComponentName() {
   return (
@@ -36,6 +37,7 @@ export default function ComponentName() {
       {/* previous sections */}
       <Testimonials />
       <CTASection/>
+      <Footer/>
     </div>
   );
 }
