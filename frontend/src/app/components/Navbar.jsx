@@ -95,19 +95,21 @@ export default function Navbar() {
       {/* Desktop Right */}
       <div className="hidden lg:flex ml-auto items-center gap-4">
         <Link
-          href="/auth"
+          href="/login"
           className="text-[13px] text-[#8a8778] hover:text-white transition-colors duration-200"
         >
           Sign in
         </Link>
-        <motion.button
-          whileHover={{ scale: 1.03, y: -1 }}
-          whileTap={{ scale: 0.97 }}
-          transition={{ duration: 0.15 }}
-          className="px-5 py-2 rounded-full bg-[#f5f2eb] text-black text-[13px] font-medium hover:bg-white transition-colors duration-200 shadow-[0_2px_12px_rgba(245,242,235,0.18)]"
-        >
-          Start for free →
-        </motion.button>
+        <Link href="/register">
+          <motion.button
+            whileHover={{ scale: 1.03, y: -1 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ duration: 0.15 }}
+            className="px-5 py-2 rounded-full bg-[#f5f2eb] text-black text-[13px] font-medium hover:bg-white transition-colors duration-200 shadow-[0_2px_12px_rgba(245,242,235,0.18)]"
+          >
+            Start for free →
+          </motion.button>
+        </Link>
       </div>
 
       {/* Hamburger */}
@@ -165,18 +167,19 @@ export default function Navbar() {
               className="pt-4 flex flex-col gap-3 mt-2"
             >
               <Link
-                href="#"
+                href="/login"
                 onClick={() => setOpen(false)}
                 className="text-[14px] text-[#8a8778] hover:text-white transition-colors"
               >
                 Sign in
               </Link>
-              <button
-                onClick={() => setOpen(false)}
-                className="px-5 py-3 rounded-full bg-[#f5f2eb] text-black text-sm font-medium hover:bg-white transition-colors w-full"
-              >
-                Start for free →
-              </button>
+              <Link href="/register" onClick={() => setOpen(false)} className="w-full">
+                <button
+                  className="px-5 py-3 rounded-full bg-[#f5f2eb] text-black text-sm font-medium hover:bg-white transition-colors w-full"
+                >
+                  Start for free →
+                </button>
+              </Link>
             </motion.div>
           </motion.div>
         )}

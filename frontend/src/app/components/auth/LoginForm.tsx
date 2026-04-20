@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -30,7 +31,7 @@ export default function LoginForm() {
     <div>
       <h2 className="text-2xl font-serif font-bold mb-2">Welcome back</h2>
       <p className="text-sm text-[#7a7870] mb-6">
-        New here? Create account →
+        New here? <Link href="/register" className="text-[#d4732a] hover:underline">Create account →</Link>
       </p>
 
       {/* OAuth */}

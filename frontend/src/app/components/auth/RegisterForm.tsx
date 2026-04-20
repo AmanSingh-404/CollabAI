@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function RegisterForm() {
   const [pw, setPw] = useState("");
@@ -15,7 +16,7 @@ export default function RegisterForm() {
       </h2>
 
       <p className="text-sm text-[#7a7870] mb-6">
-        Already have one? Sign in →
+        Already have one? <Link href="/login" className="text-[#d4732a] hover:underline">Sign in →</Link>
       </p>
 
       {/* Inputs */}
