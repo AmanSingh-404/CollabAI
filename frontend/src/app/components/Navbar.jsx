@@ -95,7 +95,7 @@ export default function Navbar() {
       {/* Desktop Right */}
       <div className="hidden lg:flex ml-auto items-center gap-4">
         <Link
-          href="#"
+          href="/auth"
           className="text-[13px] text-[#8a8778] hover:text-white transition-colors duration-200"
         >
           Sign in
