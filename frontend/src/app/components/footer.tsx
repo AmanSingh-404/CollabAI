@@ -4,7 +4,7 @@ import './footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="foot-logo">Collab<em>AI</em></div>
+      <div className="foot-logo">Collab<em>AI</em> Docs</div>
       <div className="foot-links">
         <a href="#">Product</a>
         <a href="#">Docs</a>
@@ -13,7 +13,7 @@ export default function Footer() {
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
       </div>
-      <div className="foot-copy">© 2025 CollabAI</div>
+      <div className="foot-copy">© 2025 CollabAI Docs</div>
     </footer>
   );
 }

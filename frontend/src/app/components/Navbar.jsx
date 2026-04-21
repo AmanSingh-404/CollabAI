@@ -73,7 +73,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.03 }}
           className="font-serif text-[18px] font-bold text-[#f5f2eb] select-none"
         >
-          Collab<span className="text-[#d4732a]">AI</span>
+          Collab<span className="text-[#d4732a]">AI</span> Docs
         </motion.div>
       </Link>
 
