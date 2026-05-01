@@ -12,7 +12,7 @@ export default function Sidebar() {
 
         <div className="sb-ws">
           <div className="sb-ws-av">N</div>
-          <span className="sb-ws-name">Nexus Workspace</span>
+          <span className="sb-ws-name">Aman's Workspace</span>
           <span className="sb-ws-chevron">⌄</span>
         </div>
       </div>
